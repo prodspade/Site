@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Password Protected Site</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div id="login-container">
+      <h1>Password Protected</h1>
+      <p>Enter the password to access the content</p>
+      <div class="form-group">
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="submit-btn">Submit</button>
+      </div>
+      <p id="error-message"></p>
+    </div>
+    
+    <div id="content-container" class="hidden">
+      <div class="header">
+        <h2>Protected Content</h2>
+        <button id="logout-btn">Logout</button>
+      </div>
+      <div id="embedded-content">
+        <iframe id="embedded-site" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
